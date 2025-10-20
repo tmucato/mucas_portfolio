@@ -95,6 +95,40 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
+            
+            <div class="notebook-viewer" style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px; margin: 20px 0;">
+              <h3>Code Implementation</h3>
+              <p>View the complete Jupyter notebook implementation:</p>
+              
+              <iframe 
+                src="https://colab.research.google.com/github/tmucato/NLP_CV/blob/main/sentiment_analysis.ipynb" 
+                width="100%" 
+                height="700px" 
+                frameborder="0"
+                style="border-radius: 4px; margin: 20px 0;">
+              </iframe>
+              
+              <div style="text-align: center; padding: 20px; background: #e9ecef; border-radius: 4px;">
+                <p style="margin-bottom: 15px; font-weight: 500;">Alternative viewing options:</p>
+                <a href="https://github.com/tmucato/NLP_CV/blob/main/sentiment_analysis.ipynb" 
+                   target="_blank" 
+                   class="btn btn-outline-primary btn-sm" 
+                   style="margin: 5px;">
+                  <i class="bi bi-github"></i> View on GitHub
+                </a>
+                <a href="https://colab.research.google.com/github/tmucato/NLP_CV/blob/main/sentiment_analysis.ipynb" 
+                   target="_blank" 
+                   class="btn btn-outline-success btn-sm" 
+                   style="margin: 5px;">
+                  <i class="bi bi-play-circle"></i> Open in New Tab
+                </a>
+              </div>
+              
+              <p style="margin-top: 15px; font-size: 0.9em; color: #6c757d; text-align: center;">
+                <i class="bi bi-info-circle"></i> 
+                The notebook contains the complete implementation including data preprocessing, model training, and results visualization.
+              </p>
+            </div>
           </div>
 
           <div class="col-lg-4">
@@ -115,31 +149,12 @@
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Objective</h2>
-              <p>The objective was to design and develop a multi-modal sentiment analysis system combining NLP and CV techniques to classify sentiment (positive, negative, neutral) based on text and image data.</p>
-
-              <h3>Data Preprocessing</h3>
-              <h4>Text Data</h4>
-              <p>Loaded with pandas; tokenized with NLTK's word_tokenize; lowercased; stopwords removed; vectorized via Scikit-learn's TfidfVectorizer.</p>
-              <h4>Image Data</h4>
-              <p>Loaded with OpenCV; resized to 224x224; converted to arrays and normalized with EfficientNet preprocess_input for compatibility with the pre-trained model.</p>
-
-              <h3>Model Architectures</h3>
-              <h4>NLP Model</h4>
-              <p>Logistic Regression trained on TF-IDF features for 3-class sentiment.</p>
-              <h4>Computer Vision Model</h4>
-              <p>EfficientNetB0 used for feature extraction; features flattened and fed to Logistic Regression.</p>
-              <h4>Final Fusion Model</h4>
-              <p>Concatenated TF-IDF features and EfficientNet features; RandomForestClassifier trained on combined vectors.</p>
-
-              <h3>Results and Observations</h3>
-              <p>Text model accuracy: 0.85. Image model initially low (0.32), improved with EfficientNetB0 features but remained moderate. Fusion model reached 0.78 accuracy with balanced precision/recall/F1 across classes.</p>
-
-              <h3>Challenges</h3>
-              <p>Low initial image accuracy (ResNet50+LR) prompted switch to EfficientNetB0. Careful feature dimension management was required for fusion. Larger datasets increased compute time.</p>
-
-              <h3>Conclusion</h3>
-              <p>The system effectively combines modalities to improve sentiment classification. Future work includes exploring advanced models and hyperparameter tuning.</p>
+              <h2>Project Summary</h2>
+              <p>Multi-modal sentiment analysis system combining NLP and Computer Vision to classify sentiment from text and image data. The system processes text using TF-IDF vectorization with NLTK tokenization, while images are processed through EfficientNetB0 feature extraction. Both modalities are then fused using a RandomForest classifier on the combined feature vectors.</p>
+              
+              <p>The text model achieved 85% accuracy, while the final fusion model reached 78% accuracy with balanced performance across sentiment classes. The project demonstrates effective integration of different data modalities for improved classification performance.</p>
+              
+              <p><strong>Technologies:</strong> Python, NLTK, Scikit-learn, TensorFlow, EfficientNet, OpenCV, Pandas</p>
             </div>
           </div>
 
