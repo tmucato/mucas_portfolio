@@ -56,8 +56,8 @@
       <div class="wrap">
         <div class="case-showcase">
         <div class="browser rounded">
-          <div class="browser-bar"><span></span><span></span><span></span><em>leximport</em></div>
-          <img src="assets/img/portfolio/portfolio-4.webp" alt="Leximport logo" class="contain dark">
+          <div class="browser-bar"><span></span><span></span><span></span><em>leximport · import guidance</em></div>
+          <img src="assets/img/portfolio/portfolio-4-cover.webp" alt="Leximport import guidance: product form and results with the recommended HS code, duties and taxes">
         </div>
         </div>
       </div>
@@ -68,11 +68,25 @@
         <div>
           <h2>Summary</h2>
           <p>Leximport supports the import workflow. Given a plain language product description, origin country and intended use, it classifies the product against the Harmonized System (HS) tariff codes and returns the applicable duties alongside the excerpts from the official customs tariff that justify the classification.</p>
+          <figure>
+          <div class="browser rounded">
+          <div class="browser-bar"><span></span><span></span><span></span><em>leximport · cost estimate</em></div>
+          <img src="assets/img/portfolio/portfolio-4-cost.webp" alt="Import cost estimate converting a FOB purchase to MZN with CIF value, customs duty, VAT and cost per unit">
+        </div>
+            <figcaption>Cost estimate: CIF value, customs duty and VAT converted to meticais at the central bank rate, with cost per unit. Sample query, illustrative figures.</figcaption>
+          </figure>
           <h2>How it works</h2>
           <p>The core is a retrieval augmented generation pipeline. The customs tariff PDF is parsed with pypdf and pdfplumber into structured tariff items and legal notes, stored in MongoDB and vectorised into Weaviate for semantic retrieval. A Django REST API exposes a <code>POST /api/import_advice/</code> endpoint that retrieves, ranks and validates candidate HS codes before returning a grounded answer, with PostgreSQL backing the relational data.</p>
           <p>A Next.js frontend lets users submit a product description and view the returned codes, taxes and cited sources, while a companion Flutter app brings the same workflow to iOS and Android.</p>
           <h2>Delivery</h2>
           <p>The full stack runs locally with Docker Compose, with Swagger UI for API exploration and automated Django tests covering the API models and endpoints.</p>
+          <figure>
+          <div class="browser rounded">
+          <div class="browser-bar"><span></span><span></span><span></span><em>leximport · history</em></div>
+          <img src="assets/img/portfolio/portfolio-4-history.webp" alt="Query history listing past classifications with HS code, confidence, origin, incoterm and total cost">
+        </div>
+            <figcaption>Query history: every classification is saved with its HS code, confidence and total landed cost. Sample data.</figcaption>
+          </figure>
         </div>
         <aside class="case-aside card">
           <dl>
