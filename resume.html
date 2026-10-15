@@ -3,229 +3,195 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume - Tomás Mucato Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume | Tomás Mucato</title>
+  <meta name="description" content="Services, selected outcomes, skills and education of Tomás Mucato, data and software engineering consultant.">
+  <meta name="theme-color" content="#0b0a0f">
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  
-  <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
-<body class="resume-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        
-        <h1 class="sitename">Tomás Mucato Portfolio</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="portfolio.html">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
       </nav>
-
+      <div class="header-actions">
+        <a href="resume.html" class="btn btn-sm" aria-current="page">Resume</a>
+        <a href="contact.html" class="btn btn-sm btn-light">Contact</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><i class="bi bi-list"></i></button>
     </div>
+    <nav class="mobile-menu wrap" aria-label="Mobile">
+      <a href="portfolio.html">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="resume.html" aria-current="page">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="main">
+  <main>
 
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Resume</h1>
-              <p class="mb-0">Software and Data Engineering professional with 10+ years' experience across data analytics, BI, and AI/ML. Specializes in building data pipelines (ETL/ELT), modelling and warehousing, and delivering insight-rich analytics with Power BI. Hands-on with DHIS2/OpenMRS/Commcare, SQL, Python/R/Stata, and applying machine learning to operational and program data to drive decisions.</p>
-            </div>
-          </div>
-        </div>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="label">Resume</span>
+        <h1>Data and software engineering consultant</h1>
+        <p class="lede">Over ten years building pipelines, warehouses, dashboards and AI systems where data has to be accurate, secure and auditable.</p>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Resume</li>
-          </ol>
-        </div>
-      </nav>
-    </div>
+    </section>
 
-    <section id="resume" class="resume section">
+    <section>
+      <div class="wrap resume-layout">
 
-      <div class="container">
+        <aside class="resume-side">
+          <div class="card profile">
+            <h2>Tomás Mucato</h2>
+            <div class="role">Data and Software Engineering Consultant</div>
+            <p>I design data platforms, reporting and AI tools that teams can rely on and run themselves.</p>
+            <ul class="contact-list">
+              <li><i class="bi bi-envelope"></i><a href="mailto:tomasmucato@gmail.com">tomasmucato@gmail.com</a></li>
+              <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/tomas-mucato-898075a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><i class="bi bi-github"></i><a href="https://github.com/tmucato" target="_blank" rel="noopener">github.com/tmucato</a></li>
+            </ul>
+          </div>
+        </aside>
 
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Tomás Bene Mucato</h4>
-              <p><em>Software &amp; Data Engineering and Analytics specialist delivering production-grade data solutions and AI-driven insights. Designs end-to-end pipelines, optimizes databases and warehouses, and crafts executive-ready Power BI products.</em></p>
-              <ul>
-                <li>Maputo, Mozambique</li>
-                <li>(+258) 821273007</li>
-                <li>tomasmucato@gmail.com</li>
-              </ul>
+        <div class="resume-main">
+          <div class="card">
+            <h2 class="card-title">Services</h2>
+            <div class="service-list">
+            <div>
+              <h3><i class="bi bi-diagram-3"></i>Data platforms</h3>
+              <p>Pipelines and warehouses that bring many source systems into one reliable reporting layer.</p>
             </div>
-
-            <h3 class="resume-title">Technical Skills</h3>
-            <div class="resume-item">
-              <ul>
-                <li><strong>Languages</strong>: C#, Python, SQL</li>
-                <li><strong>Frameworks</strong>: .NET, Angular</li>
-                <li><strong>APIs</strong>: REST, JSON, OAuth</li>
-                <li><strong>Databases</strong>: SQL Server, PostgreSQL, MySQL</li>
-                <li><strong>Data Engineering</strong>: ETL/ELT (Pentaho, SSIS), Data Warehousing</li>
-                <li><strong>DevOps</strong>: CI/CD, Docker, Git</li>
-                <li><strong>Analytics</strong>: Power BI (DAX, data modelling)</li>
-              </ul>
+            <div>
+              <h3><i class="bi bi-shield-check"></i>Data quality and governance</h3>
+              <p>Validation rules, quarantine, identity matching and access control, so numbers can be trusted and audited.</p>
             </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>MSc in Applied Data Science &amp; AI (Thesis Ongoing)</h4>
-              <h5>2024 – Present</h5>
-              <p><em>Open Institute of Technology, Malta</em></p>
-              <p>Focus: Machine Learning, AI systems, MLOps foundations, statistical modelling, data engineering at scale.</p>
+            <div>
+              <h3><i class="bi bi-bar-chart-line"></i>BI and reporting</h3>
+              <p>Power BI models, KPI scorecards and dashboards that teams run without engineering support.</p>
             </div>
-
-            <div class="resume-item">
-              <h4>MBA, Project Management</h4>
-              <h5>2018 – 2020</h5>
-              <p><em>Higher Institute of Science and Technology of Mozambique, Maputo</em></p>
+            <div>
+              <h3><i class="bi bi-cpu"></i>Applied AI</h3>
+              <p>Retrieval augmented generation, NLP and document automation with cited, verifiable answers.</p>
             </div>
-
-            <div class="resume-item">
-              <h4>BSc, Information Technologies</h4>
-              <h5>2009 – 2012</h5>
-              <p><em>Catholic University of Mozambique, Beira</em></p>
+            <div>
+              <h3><i class="bi bi-cloud-check"></i>Cloud and DevOps</h3>
+              <p>Containerised services, CI/CD and secured Linux infrastructure for repeatable releases.</p>
             </div>
-
+            <div>
+              <h3><i class="bi bi-plug"></i>Systems integration</h3>
+              <p>Secure integrations between core systems and external APIs, and modernisation of legacy applications.</p>
+            </div>
+            </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Data Analytics Advisor</h4>
-              <h5>2019 – Present</h5>
-              <p><em>Elizabeth Glaser Pediatric AIDS Foundation, Maputo, Mozambique</em></p>
-              <ul>
-                <li>Designed enterprise-grade data pipelines and models (Pentaho, SSIS, SQL) feeding centralized warehouses.</li>
-                <li>Developed advanced Power BI solutions (DAX, data modelling) with KPI scorecards and executive dashboards.</li>
-                <li>Applied ML/statistical techniques (Python/R/Stata) for forecasting, anomaly detection, and performance analysis.</li>
-                <li>Integrated DHIS2, OpenMRS, and Commcare sources; automated data quality checks and governance.</li>
-                <li>Led cross-functional teams; coached analysts/engineers on data engineering, visualization, and storytelling.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>HIS Analyst and Developer</h4>
-              <h5>2017 – 2019</h5>
-              <p><em>Elizabeth Glaser Pediatric AIDS Foundation, Maputo, Mozambique</em></p>
-              <ul>
-                <li>Engineered data capture tools and integrations (DHIS2/OpenMRS/Commcare), improving latency and reliability.</li>
-                <li>Built and maintained ETL jobs; normalized disparate sources into analytics-ready data models.</li>
-                <li>Delivered self-service BI assets and governed datasets to scale analytics across teams.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Software and Data Engineer</h4>
-              <h5>2014 – 2017</h5>
-              <p><em>Millennium BIM, Maputo, Mozambique</em></p>
-              <ul>
-                <li>Software development on the .NET platform (Windows Forms, Web Applications, Web Services, Windows Services).</li>
-                <li>Application maintenance and support across multiple systems and services.</li>
-                <li>Software design, implementation, testing, and documentation following best practices.</li>
-                <li>Database design and performance improvement for transactional and reporting workloads.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Software Consultant</h4>
-              <h5>2013 – 2014</h5>
-              <p><em>2ibi Consulting, Beira, Mozambique</em></p>
-              <ul>
-                <li>Parameterization and implementation of Primavera ERP solutions for clients.</li>
-                <li>Project implementation and planning with stakeholders and technical teams.</li>
-                <li>Client support provided locally and remotely across deployments.</li>
-                <li>VBA-based ERP customization to meet specific business requirements.</li>
-              </ul>
-            </div>
-
+          <div class="card">
+            <h2 class="card-title">Selected outcomes</h2>
+            <ul class="check-list">
+            <li>Consolidated more than 150 operational databases, around 200 million records, into a central warehouse, cutting routine reporting cycle time by roughly 25%.</li>
+            <li>Built a BI workspace from the ground up, including the KPI scorecards leadership uses to track performance.</li>
+            <li>Delivered a RAG system that automates a long, expert written report, from literature retrieval to evidence extraction, with a GDPR compliant workflow.</li>
+            <li>Designed cloud platforms with role based access, containerised services and CI/CD pipelines for distributed, high availability systems.</li>
+            <li>Modernised mission critical .NET applications and built secure integrations with external institutions.</li>
+            <li>Led and coached multidisciplinary teams of developers and analysts, acting as technical counterpart to senior stakeholders.</li>
+            </ul>
           </div>
 
+          <div class="card">
+            <h2 class="card-title">Skills</h2>
+          <div class="skill-group">
+            <h3>Data engineering</h3>
+            <ul class="tags"><li>ETL / ELT</li><li>Data warehousing</li><li>Pentaho</li><li>SSIS</li><li>SQL Server</li><li>PostgreSQL</li><li>MongoDB</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI and ML</h3>
+            <ul class="tags"><li>RAG</li><li>NLP</li><li>BERT models</li><li>TF‑IDF</li><li>Applied ML</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>BI and analytics</h3>
+            <ul class="tags"><li>Power BI (DAX)</li><li>Tableau</li><li>KoboToolbox</li><li>R</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud and DevOps</h3>
+            <ul class="tags"><li>Azure</li><li>Docker</li><li>CI/CD</li><li>Linux</li><li>NGINX</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Languages and frameworks</h3>
+            <ul class="tags"><li>Python</li><li>C#</li><li>SQL</li><li>Java</li><li>JavaScript</li><li>.NET</li><li>Angular</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data protection</h3>
+            <ul class="tags"><li>GDPR</li><li>RBAC and RLS</li><li>Pseudonymisation</li></ul>
+          </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Education</h2>
+            <div class="edu-item">
+              <h3>MSc, Applied Data Science &amp; AI</h3>
+              <div class="muted">Open Institute of Technology · 2024 – 2026 · Completed</div>
+              <p>Capstone: a retrieval augmented generation system that automates long, expert written reports, from literature retrieval to evidence extraction.</p>
+            </div>
+            <div class="edu-item">
+              <h3>Postgraduate Diploma, Project Management</h3>
+              <div class="muted">ISCTEM · 2018 – 2023</div>
+            </div>
+            <div class="edu-item">
+              <h3>BSc, Information Technologies</h3>
+              <div class="muted">Catholic University of Mozambique · 2009 – 2012</div>
+            </div>
+          </div>
         </div>
 
       </div>
-
     </section>
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Tomás Mucato Portfolio</h3>
-      <p>Crafting intelligent systems with software, data, AI, and DevOps</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/tomas-mucato-898075a0/"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/tmucato"><i class="bi bi-github"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">@tmucato</strong> <span>All Rights Reserved</span>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+          <p>Data and software engineering consultant. Pipelines, warehouses, reporting and applied AI.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h3>Site</h3>
+            <ul>
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Elsewhere</h3>
+            <ul>
+              <li><a href="mailto:tomasmucato@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/tomas-mucato-898075a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/tmucato" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">© 2026 Tomás Mucato</div>
     </div>
   </footer>
 
-  
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  
-  <div id="preloader"></div>
-
-  
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
 
 </body>
 

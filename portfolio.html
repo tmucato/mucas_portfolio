@@ -3,183 +3,166 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Tomás Mucato Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work | Tomás Mucato</title>
+  <meta name="description" content="Projects by Tomás Mucato: data platforms, retrieval augmented generation and applied machine learning.">
+  <meta name="theme-color" content="#0b0a0f">
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Tomás Mucato Portfolio</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="portfolio.html" aria-current="page">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
       </nav>
-
+      <div class="header-actions">
+        <a href="resume.html" class="btn btn-sm">Resume</a>
+        <a href="contact.html" class="btn btn-sm btn-light">Contact</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><i class="bi bi-list"></i></button>
     </div>
+    <nav class="mobile-menu wrap" aria-label="Mobile">
+      <a href="portfolio.html" aria-current="page">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="main">
+  <main>
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Portfolio</h1>
-              <p class="mb-0">Showcasing my software development projects and technical solutions. From full-stack applications to data engineering platforms, each project demonstrates my expertise in modern technologies and best practices.</p>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="label">Work</span>
+        <h1>Projects</h1>
+        <p class="lede">Data platforms, retrieval augmented generation and applied machine learning, each with the problem it solves and the stack behind it.</p>
+      </div>
+    </section>
+
+    <section style="padding-bottom:120px">
+      <div class="wrap">
+        <div class="filters" data-filters role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="data" aria-pressed="false">Data engineering</button>
+          <button type="button" data-filter="ml" aria-pressed="false">ML and AI</button>
+          <button type="button" data-filter="app" aria-pressed="false">Web apps</button>
+        </div>
+        <div class="card-grid two">
+        <article class="card project" data-tags="data app">
+          <a href="portfolio-details-ers.html" class="thumb"><img src="assets/img/portfolio/portfolio-5.webp" alt="ERS Reporting Demo"></a>
+          <div class="body">
+            <span class="label">Data platform</span>
+            <h3><a href="portfolio-details-ers.html">ERS Reporting Demo</a></h3>
+            <p>Bronze, silver and gold pipeline that joins HR, helpdesk, survey and deployment data into a pseudonymised star schema, with validation rules, expert matching, Kobo prefill and cited AI search.</p>
+            <ul class="tags"><li>Parquet</li><li>Power BI</li><li>KoboToolbox</li><li>XLSForm</li></ul>
+            <div class="links">
+              <a href="https://tmucato.github.io/ers-reporting-demo/#overview" class="arrow-link" target="_blank" rel="noopener">Live demo <i class="bi bi-arrow-up-right"></i></a>
+              <a href="portfolio-details-ers.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+              <a href="https://github.com/tmucato/ers-reporting-demo" class="arrow-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
             </div>
           </div>
+        </article>
+        <article class="card project" data-tags="ml app">
+          <a href="portfolio-details-leximport.html" class="thumb contain dark"><img src="assets/img/portfolio/portfolio-4.webp" alt="Leximport"></a>
+          <div class="body">
+            <span class="label">RAG platform</span>
+            <h3><a href="portfolio-details-leximport.html">Leximport</a></h3>
+            <p>Customs guidance platform that classifies products into HS tariff codes and returns duties with cited excerpts from the official tariff.</p>
+            <ul class="tags"><li>Django</li><li>Next.js</li><li>Weaviate</li><li>Flutter</li></ul>
+            <div class="links">
+              <a href="portfolio-details-leximport.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+        <article class="card project" data-tags="ml">
+          <a href="portfolio-details-multimodal.html" class="thumb contain"><img src="assets/img/portfolio/portfolio-3.webp" alt="Multi‑Modal Sentiment Analysis"></a>
+          <div class="body">
+            <span class="label">Machine learning</span>
+            <h3><a href="portfolio-details-multimodal.html">Multi‑Modal Sentiment Analysis</a></h3>
+            <p>Sentiment classification from text and images: TF‑IDF text features and EfficientNet image features fused with a random forest.</p>
+            <ul class="tags"><li>NLP</li><li>Computer vision</li><li>scikit‑learn</li></ul>
+            <div class="links">
+              <a href="portfolio-details-multimodal.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+              <a href="https://github.com/tmucato/NLP_CV" class="arrow-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project" data-tags="ml">
+          <a href="portfolio-details-smart-home.html" class="thumb contain"><img src="assets/img/portfolio/portfolio-2.webp" alt="Smart Home Automation AI"></a>
+          <div class="body">
+            <span class="label">AI agent</span>
+            <h3><a href="portfolio-details-smart-home.html">Smart Home Automation AI</a></h3>
+            <p>Command line assistant that controls lights, fans and thermostats from natural language, using the OpenAI API.</p>
+            <ul class="tags"><li>Python</li><li>OpenAI</li><li>CLI</li></ul>
+            <div class="links">
+              <a href="portfolio-details-smart-home.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+              <a href="https://github.com/tmucato/Smart_Home_Automation_AI" class="arrow-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project" data-tags="app">
+          <a href="portfolio-details-angular-movie.html" class="thumb"><img src="assets/img/portfolio/portfolio-1.webp" alt="Angular Movie Application"></a>
+          <div class="body">
+            <span class="label">Web application</span>
+            <h3><a href="portfolio-details-angular-movie.html">Angular Movie Application</a></h3>
+            <p>Responsive Angular app for browsing movies and TV shows against a public movie API.</p>
+            <ul class="tags"><li>Angular</li><li>TypeScript</li><li>REST</li></ul>
+            <div class="links">
+              <a href="https://tmucato.github.io/MoviesApp_Angular/" class="arrow-link" target="_blank" rel="noopener">Live demo <i class="bi bi-arrow-up-right"></i></a>
+              <a href="portfolio-details-angular-movie.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+              <a href="https://github.com/tmucato/MoviesApp_Angular" class="arrow-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
         </div>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web Applications</li>
-            <li data-filter=".filter-ml">ML & AI Projects</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="Angular Movie Application">
-                <div class="portfolio-info">
-                  <h4>Angular Movie Application</h4>
-                  <p>Modern Angular application for browsing movies and TV shows</p>
-                  <a href="https://tmucato.github.io/MoviesApp_Angular/" title="Live Demo" class="details-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
-                  <a href="portfolio-details-angular-movie.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="Smart Home Automation AI">
-                <div class="portfolio-info">
-                  <h4>Smart Home Automation AI</h4>
-                  <p>AI-powered CLI to control lights, fans, and thermostats</p>
-                  <a href="portfolio-details-smart-home.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Multi-Modal Sentiment Analysis System">
-                <div class="portfolio-info">
-                  <h4>Multi-Modal Sentiment Analysis</h4>
-                  <p>Fusion of NLP (TF-IDF+LR) and CV (EfficientNet+LR) with RF</p>
-                  <a href="portfolio-details-multimodal.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Tomás Mucato Portfolio</h3>
-      <p>Crafting intelligent systems with software, data, AI, and DevOps</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/tomas-mucato-898075a0/"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/tmucato"><i class="bi bi-github"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">@tmucato</strong> <span>All Rights Reserved</span>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+          <p>Data and software engineering consultant. Pipelines, warehouses, reporting and applied AI.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h3>Site</h3>
+            <ul>
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Elsewhere</h3>
+            <ul>
+              <li><a href="mailto:tomasmucato@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/tomas-mucato-898075a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/tmucato" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">© 2026 Tomás Mucato</div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
 
 </body>
 

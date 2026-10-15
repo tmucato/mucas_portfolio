@@ -6,7 +6,7 @@ A personal portfolio website showcasing software development and data/AI project
 Overview
 --------
 - Focus: Software engineering, data engineering, AI/ML.
-- Clean, responsive UI using Bootstrap 5 and vendor libraries (AOS, Swiper, GLightbox, Isotope, Typed.js).
+- Dark, responsive design in plain HTML and CSS (`assets/css/site.css`, `assets/js/site.js`), with Bootstrap Icons as the only library.
 - No build step required; runs as static files.
 
 Live Preview
@@ -22,11 +22,18 @@ Structure
 - `portfolio-details-angular-movie.html` — Angular Movie Application details
 - `portfolio-details-smart-home.html` — Smart Home Automation AI details
 - `portfolio-details-multimodal.html` — Multi‑Modal Sentiment Analysis details
+- `portfolio-details-ers.html`: ERS Reporting Demo details
+- `portfolio-details-leximport.html`: Leximport details
 - `contact.html` — Contact information and email form (`forms/contact.php` fallback mailer)
-- `assets/` — CSS, JS, vendor libraries, and images
+- `assets/`: site CSS and JS, icons, and images
 
 Featured Projects
 -----------------
+- ERS Reporting Demo (medallion data pipeline, data quality, Power BI)
+  - Live demo: https://tmucato.github.io/ers-reporting-demo/#overview
+  - GitHub: https://github.com/tmucato/ers-reporting-demo
+  - Details: `portfolio-details-ers.html`
+
 - Angular Movie Application
   - Live demo: https://tmucato.github.io/MoviesApp_Angular/
   - Details: `portfolio-details-angular-movie.html`
@@ -51,8 +58,8 @@ Then visit `http://localhost:8080` (or the shown URL).
 Tech Stack
 ----------
 - HTML5, CSS3, JavaScript
-- Bootstrap 5, Bootstrap Icons
-- AOS, Swiper, GLightbox, Isotope, Typed.js
+- Bootstrap Icons
+- Geist and Geist Mono (Google Fonts)
 
 Branding
 --------

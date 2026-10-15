@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leximport | Tomás Mucato</title>
+  <meta name="description" content="Leximport is a customs guidance platform for HS tariff classification and import orientation, using a RAG pipeline over official customs tariff data.">
+  <meta name="theme-color" content="#0b0a0f">
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="portfolio.html" aria-current="page">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <a href="resume.html" class="btn btn-sm">Resume</a>
+        <a href="contact.html" class="btn btn-sm btn-light">Contact</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+    </div>
+    <nav class="mobile-menu wrap" aria-label="Mobile">
+      <a href="portfolio.html" aria-current="page">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <a href="portfolio.html" class="back-link"><i class="bi bi-arrow-left"></i> All work</a>
+        <span class="label">RAG platform</span>
+        <h1>Leximport</h1>
+        <p class="lede">Customs guidance platform that classifies products into HS tariff codes and returns duties and sourced legal excerpts, backed by a RAG pipeline.</p>
+        
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="case-showcase">
+        <div class="browser rounded">
+          <div class="browser-bar"><span></span><span></span><span></span><em>leximport</em></div>
+          <img src="assets/img/portfolio/portfolio-4.webp" alt="Leximport logo" class="contain dark">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap case-body">
+        <div>
+          <h2>Summary</h2>
+          <p>Leximport supports the import workflow. Given a plain language product description, origin country and intended use, it classifies the product against the Harmonized System (HS) tariff codes and returns the applicable duties alongside the excerpts from the official customs tariff that justify the classification.</p>
+          <h2>How it works</h2>
+          <p>The core is a retrieval augmented generation pipeline. The customs tariff PDF is parsed with pypdf and pdfplumber into structured tariff items and legal notes, stored in MongoDB and vectorised into Weaviate for semantic retrieval. A Django REST API exposes a <code>POST /api/import_advice/</code> endpoint that retrieves, ranks and validates candidate HS codes before returning a grounded answer, with PostgreSQL backing the relational data.</p>
+          <p>A Next.js frontend lets users submit a product description and view the returned codes, taxes and cited sources, while a companion Flutter app brings the same workflow to iOS and Android.</p>
+          <h2>Delivery</h2>
+          <p>The full stack runs locally with Docker Compose, with Swagger UI for API exploration and automated Django tests covering the API models and endpoints.</p>
+        </div>
+        <aside class="case-aside card">
+          <dl>
+            <dt>Category</dt><dd>Full stack RAG platform</dd>
+            <dt>Backend</dt><dd>Django REST Framework</dd>
+            <dt>Frontend</dt><dd>Next.js, TypeScript</dd>
+            <dt>Mobile</dt><dd>Flutter</dd>
+            <dt>Data</dt><dd>PostgreSQL, MongoDB, Weaviate</dd>
+            <dt>Infra</dt><dd>Docker Compose, Nginx</dd>
+            <dt>Source</dt><dd>Private repositories</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+          <p>Data and software engineering consultant. Pipelines, warehouses, reporting and applied AI.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h3>Site</h3>
+            <ul>
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Elsewhere</h3>
+            <ul>
+              <li><a href="mailto:tomasmucato@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/tomas-mucato-898075a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/tmucato" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Tomás Mucato</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+
+</body>
+
+</html>

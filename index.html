@@ -3,111 +3,233 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Tomás Mucato Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tomás Mucato | Data and Software Engineering Consultant</title>
+  <meta name="description" content="Tomás Mucato, data and software engineering consultant. Data platforms, reporting, data quality and applied AI.">
+  <meta name="theme-color" content="#0b0a0f">
+  <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  
-  <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        
-        <h1 class="sitename">Tomás Mucato Portfolio</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="portfolio.html">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
       </nav>
-
+      <div class="header-actions">
+        <a href="resume.html" class="btn btn-sm">Resume</a>
+        <a href="contact.html" class="btn btn-sm btn-light">Contact</a>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><i class="bi bi-list"></i></button>
     </div>
+    <nav class="mobile-menu wrap" aria-label="Mobile">
+      <a href="portfolio.html">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <main class="main">
+  <main>
 
-    <section id="hero" class="hero section dark-background">
+    <section class="hero">
+      <div class="wrap">
+        <span class="label">Data and software engineering</span>
+        <h1>From scattered systems <span class="accent">to one source of truth.</span></h1>
+        <p class="lede">I'm Tomás Mucato, an independent consultant. I build the pipelines, warehouses, dashboards and AI tools in between, most recently bringing more than 150 sources and around 200 million records into one warehouse.</p>
+        <div class="btn-row">
+          <a href="mailto:tomasmucato@gmail.com" class="btn btn-light">Email me</a>
+          <a href="portfolio.html" class="btn">View work</a>
+        </div>
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
-        <h2>Tomás Mucato</h2>
-        <p>I'm <span class="typed" data-typed-items="Software and Data Engineer, Frontend Developer, Data Analyst, AI and ML Engineer"></span><span class="typed-cursor typed-cursor--blink"></span></p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/tomas-mucato-898075a0/"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/tmucato"><i class="bi bi-github"></i></a>
+        <div class="showcase">
+          <div class="run-log" aria-hidden="true">
+            <div class="head"><span>INGESTION RUN</span><span>rows</span></div>
+            <div><span>bronze</span>hr_workers <span class="ok">300</span></div>
+            <div><span>bronze</span>freshdesk_tickets <span class="ok">1,202</span></div>
+            <div><span>bronze</span>kobo_submissions <span class="ok">451</span></div>
+            <div><span>bronze</span>sharepoint_deploys <span class="ok">180</span></div>
+            <div><span>silver</span>10 rules, <span class="warn">7 quarantined</span></div>
+            <div><span>gold&nbsp;&nbsp;</span>8 tables <span class="ok">published</span></div>
+          </div>
+          <div class="browser">
+          <div class="browser-bar"><span></span><span></span><span></span><em>tmucato.github.io/ers-reporting-demo</em></div>
+          <img src="assets/img/portfolio/portfolio-5.webp" alt="ERS Reporting Demo dashboard: experts, deployments by sector and country, satisfaction by quarter">
+        </div>
+          <div class="toast t1" aria-hidden="true"><span class="icon ok"><i class="bi bi-check-lg"></i></span><div><strong>Pipeline run succeeded</strong><small>4 sources, 2,133 rows, 85 ms</small></div></div>
+          <div class="toast t2" aria-hidden="true"><span class="icon warn"><i class="bi bi-exclamation-triangle"></i></span><div><strong>7 rows quarantined</strong><small>10 validation rules checked</small></div></div>
+          <div class="toast t3" aria-hidden="true"><span class="icon accent"><i class="bi bi-people"></i></span><div><strong>Expert match rate 97.1%</strong><small>by id, then email, then name</small></div></div>
         </div>
       </div>
+    </section>
 
+    <section class="tools">
+      <div class="wrap">
+        <span class="label">Tools I work with</span>
+        <ul>
+          <li>Python</li><li>SQL Server</li><li>PostgreSQL</li><li>Power BI</li><li>Azure</li><li>Docker</li><li>Pentaho</li><li>.NET</li><li>MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Services</span>
+          <h2>What I build</h2>
+          <p>Work usually starts with data spread across systems nobody fully trusts, and ends with something a team can run on its own.</p>
+        </div>
+        <div class="card-grid">
+        <div class="card service">
+          <div class="icon"><i class="bi bi-diagram-3"></i></div>
+          <h3>Data platforms</h3>
+          <p>Pipelines and warehouses that bring many source systems into one reliable reporting layer.</p>
+        </div>
+        <div class="card service">
+          <div class="icon"><i class="bi bi-shield-check"></i></div>
+          <h3>Data quality and governance</h3>
+          <p>Validation rules, quarantine, identity matching and access control, so numbers can be trusted and audited.</p>
+        </div>
+        <div class="card service">
+          <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
+          <h3>BI and reporting</h3>
+          <p>Power BI models, KPI scorecards and dashboards that teams run without engineering support.</p>
+        </div>
+        <div class="card service">
+          <div class="icon"><i class="bi bi-cpu"></i></div>
+          <h3>Applied AI</h3>
+          <p>Retrieval augmented generation, NLP and document automation with cited, verifiable answers.</p>
+        </div>
+        <div class="card service">
+          <div class="icon"><i class="bi bi-cloud-check"></i></div>
+          <h3>Cloud and DevOps</h3>
+          <p>Containerised services, CI/CD and secured Linux infrastructure for repeatable releases.</p>
+        </div>
+        <div class="card service">
+          <div class="icon"><i class="bi bi-plug"></i></div>
+          <h3>Systems integration</h3>
+          <p>Secure integrations between core systems and external APIs, and modernisation of legacy applications.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">Selected work</span>
+          <h2>Recent projects</h2>
+          <p>Each one shows the problem, the approach and the stack behind it.</p>
+        </div>
+      <article class="feature">
+        <div class="feature-media">
+        <div class="browser rounded">
+          <div class="browser-bar"><span></span><span></span><span></span><em>tmucato.github.io/ers-reporting-demo</em></div>
+          <img src="assets/img/portfolio/portfolio-5.webp" alt="ERS Reporting Demo">
+        </div>
+        </div>
+        <div>
+          <span class="label">Data platform</span>
+          <h3><a href="portfolio-details-ers.html">ERS Reporting Demo</a></h3>
+          <p>Bronze, silver and gold pipeline that joins HR, helpdesk, survey and deployment data into a pseudonymised star schema, with validation rules, expert matching, Kobo prefill and cited AI search.</p>
+          <ul class="tags"><li>Parquet</li><li>Power BI</li><li>KoboToolbox</li><li>XLSForm</li></ul>
+          <div class="btn-row"><a href="https://tmucato.github.io/ers-reporting-demo/#overview" class="arrow-link" target="_blank" rel="noopener">Live demo <i class="bi bi-arrow-up-right"></i></a>
+            <a href="portfolio-details-ers.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+            <a href="https://github.com/tmucato/ers-reporting-demo" class="arrow-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a></div>
+        </div>
+      </article>
+      <article class="feature flip">
+        <div class="feature-media">
+        <div class="browser rounded">
+          <div class="browser-bar"><span></span><span></span><span></span><em>leximport</em></div>
+          <img src="assets/img/portfolio/portfolio-4.webp" alt="Leximport" class="contain dark">
+        </div>
+        </div>
+        <div>
+          <span class="label">RAG platform</span>
+          <h3><a href="portfolio-details-leximport.html">Leximport</a></h3>
+          <p>Customs guidance platform that classifies products into HS tariff codes and returns duties with cited excerpts from the official tariff.</p>
+          <ul class="tags"><li>Django</li><li>Next.js</li><li>Weaviate</li><li>Flutter</li></ul>
+          <div class="btn-row"><a href="portfolio-details-leximport.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a></div>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="feature-media">
+        <div class="browser rounded">
+          <div class="browser-bar"><span></span><span></span><span></span><em>github.com/tmucato/NLP_CV</em></div>
+          <img src="assets/img/portfolio/portfolio-3.webp" alt="Multi‑Modal Sentiment Analysis" class="contain">
+        </div>
+        </div>
+        <div>
+          <span class="label">Machine learning</span>
+          <h3><a href="portfolio-details-multimodal.html">Multi‑Modal Sentiment Analysis</a></h3>
+          <p>Sentiment classification from text and images: TF‑IDF text features and EfficientNet image features fused with a random forest.</p>
+          <ul class="tags"><li>NLP</li><li>Computer vision</li><li>scikit‑learn</li></ul>
+          <div class="btn-row"><a href="portfolio-details-multimodal.html" class="arrow-link">Case study <i class="bi bi-arrow-right"></i></a>
+            <a href="https://github.com/tmucato/NLP_CV" class="arrow-link" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a></div>
+        </div>
+      </article>
+        <p class="center-link" style="text-align:center;margin-top:24px"><a href="portfolio.html" class="arrow-link">All projects <i class="bi bi-arrow-right"></i></a></p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Have a data problem worth solving?</h2>
+          <p>Tell me where your data lives today and what you need from it.</p>
+          <div class="btn-row">
+            <a href="mailto:tomasmucato@gmail.com" class="btn btn-light">Email me</a>
+            <a href="resume.html" class="btn">View resume</a>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Tomás Mucato Portfolio</h3>
-      <p>Crafting intelligent systems with software, data, AI, and DevOps</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/tomas-mucato-898075a0/"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/tmucato"><i class="bi bi-github"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">@tmucato</strong> <span>All Rights Reserved</span>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M13 3 23 8 13 13 3 8Z" fill="#b9a8ff"/><path d="M3 13l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".65"/><path d="M3 18l10 5 10-5" stroke="#b9a8ff" stroke-width="2" fill="none" opacity=".35"/></svg> Tomás Mucato</a>
+          <p>Data and software engineering consultant. Pipelines, warehouses, reporting and applied AI.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h3>Site</h3>
+            <ul>
+              <li><a href="portfolio.html">Work</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Elsewhere</h3>
+            <ul>
+              <li><a href="mailto:tomasmucato@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/tomas-mucato-898075a0/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/tmucato" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">© 2026 Tomás Mucato</div>
     </div>
   </footer>
 
-  
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  
-  <div id="preloader"></div>
-
-  
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
 
 </body>
 
